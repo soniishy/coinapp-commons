@@ -15,12 +15,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        coloreBotao()
+        coloreApp()
     }
 
-    func coloreBotao() {
+    func coloreApp() {
 
-        testButton.setTitleColor(UIColor.getCustomBlueColor(), for: .normal)
+        testButton.setTitleColor(UIColor.corSecundaria(), for: .normal)
 //        testButton.setTitleColor(cor.corSelecionada, for: .normal)
     }
 

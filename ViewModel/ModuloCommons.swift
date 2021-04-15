@@ -6,3 +6,23 @@
 //
 
 import Foundation
+
+public enum EverisBecaColor {
+    case corEveris
+    case corBeca
+    case corIOS
+    public var corSelecionada: UIColor {
+        switch self { //#colorLiteral()
+        case .corEveris: return #colorLiteral(red: 0.5490196078, green: 0.5960784314, blue: 0.3529411765, alpha: 1)
+        case .corBeca: return #colorLiteral(red: 0.926291585, green: 0.234855473, blue: 0.1111717001, alpha: 1)
+        case .corIOS: return #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)
+        }
+    }
+}
+
+extension UIColor{
+    public class func getCustomBlueColor() -> UIColor{
+        return UIColor(red: 0.5490196078, green: 0.5960784314, blue: 0.3529411765, alpha: 1)
+    }
+    
+}

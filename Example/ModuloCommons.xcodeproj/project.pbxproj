@@ -31,8 +31,8 @@
 		0B82DADE34BF018CACFA35D4 /* Pods_ModuloCommons_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModuloCommons_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DF286E6ADBAB6026CD6C96B /* Pods-ModuloCommons_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuloCommons_Tests.release.xcconfig"; path = "Target Support Files/Pods-ModuloCommons_Tests/Pods-ModuloCommons_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2875ACF760824B5020601954 /* Pods-ModuloCommons_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuloCommons_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ModuloCommons_Tests/Pods-ModuloCommons_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		2E9E5AEDE16539E4110D3220 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		4715032A7A9D00E36CBEBEB4 /* ModuloCommons.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ModuloCommons.podspec; path = ../ModuloCommons.podspec; sourceTree = "<group>"; };
+		2E9E5AEDE16539E4110D3220 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4715032A7A9D00E36CBEBEB4 /* ModuloCommons.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ModuloCommons.podspec; path = ../ModuloCommons.podspec; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ModuloCommons_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModuloCommons_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		8F67A986D157235A27E59D42 /* Pods_ModuloCommons_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModuloCommons_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B39CEC65355644DADF5017D6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B39CEC65355644DADF5017D6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C9CC3A0BADF9A5A35B28EDA4 /* Pods-ModuloCommons_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuloCommons_Example.release.xcconfig"; path = "Target Support Files/Pods-ModuloCommons_Example/Pods-ModuloCommons_Example.release.xcconfig"; sourceTree = "<group>"; };
 		CBCB13AB0B984FCA0AAB30F0 /* Pods-ModuloCommons_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuloCommons_Example.debug.xcconfig"; path = "Target Support Files/Pods-ModuloCommons_Example/Pods-ModuloCommons_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,11 +102,11 @@
 		607FACD21AFB9204008FA782 /* Example for ModuloCommons */ = {
 			isa = PBXGroup;
 			children = (
+				FCBF0A7C262759990061AB1C /* Model */,
+				FCBF0A7D262759A10061AB1C /* View */,
+				FCBF0A74262759860061AB1C /* ViewModel */,
+				FCBF0A752627598D0061AB1C /* Controller */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for ModuloCommons";
@@ -116,6 +116,7 @@
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACD41AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -148,6 +149,37 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		FCBF0A74262759860061AB1C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		FCBF0A752627598D0061AB1C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD71AFB9204008FA782 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		FCBF0A7C262759990061AB1C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FCBF0A7D262759A10061AB1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				607FACD91AFB9204008FA782 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		FD54E32BE2E647C7D5759104 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,7 +188,6 @@
 				2875ACF760824B5020601954 /* Pods-ModuloCommons_Tests.debug.xcconfig */,
 				0DF286E6ADBAB6026CD6C96B /* Pods-ModuloCommons_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +259,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

@@ -7,18 +7,26 @@
 //
 
 import UIKit
+import ModuloCommons
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var testButton: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        coloreBotao()
+    }
+
+    func coloreBotao() {
+
+        testButton.setTitleColor(UIColor.getCustomBlueColor(), for: .normal)
+//        testButton.setTitleColor(cor.corSelecionada, for: .normal)
     }
 
     override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
+    
 }
+
 

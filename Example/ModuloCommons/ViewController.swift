@@ -20,7 +20,7 @@ class ViewController: UIViewController {
 
     func coloreApp() {
 
-        testButton.setTitleColor(UIColor.corSecundaria(), for: .normal)
+        testButton.setTitleColor(UIColor.corTexto(), for: .normal)
 //        testButton.setTitleColor(cor.corSelecionada, for: .normal)
     }
 

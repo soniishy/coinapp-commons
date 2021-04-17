@@ -22,6 +22,7 @@ class ViewController: UIViewController {
 
         testButton.setTitleColor(UIColor.corTexto(), for: .normal)
 //        testButton.setTitleColor(cor.corSelecionada, for: .normal)
+        testButton.backgroundColor = UIColor.corPrimaria()
     }
 
     override func didReceiveMemoryWarning() {
